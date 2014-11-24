@@ -1,0 +1,157 @@
+<html>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+function moveup ()
+{
+redball.top=redball.top-5;
+}
+function movedown ()
+{
+redball.top=redball.top+5;
+}
+function moveleft ()
+{
+
+if (redball.left<=0){
+}else{
+redball.left=redball.left-5;
+}
+
+}
+function moveright ()
+{
+redball.left=redball.left+5;
+}
+function movesquare()
+{
+//move down
+redball.top=redball.top+5;
+redball.top=redball.top+5;
+redball.top=redball.top+5;
+redball.top=redball.top+5;
+redball.top=redball.top+5;
+redball.top=redball.top+5;
+redball.top=redball.top+5;
+redball.top=redball.top+5;
+//move left
+redball.left=redball.left-10;
+redball.left=redball.left-10;
+redball.left=redball.left-10;
+redball.left=redball.left-10;
+//move up
+redball.top=redball.top-10;
+redball.top=redball.top-10;
+redball.top=redball.top-10;
+redball.top=redball.top-10;
+//move right
+redball.left=redball.left+10;
+redball.left=redball.left+10;
+redball.left=redball.left+10;
+redball.left=redball.left+10;
+}
+function movedownright()
+
+{
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+movedown();
+moveright();
+}
+function movedownleft()
+
+{
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+movedown();
+moveleft();
+}
+function moveupright()
+
+{
+moveup();
+moveright();
+moveup();
+moveright();
+moveup();
+moveright();
+moveup();
+moveright();
+}
+function movetriangle()
+
+{
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+}
+
+function upleft()
+{
+moveup();
+moveleft();
+}
+
+</script>
+</head>
+<body>
+<img id="redball" src="redballimage.jpg" alt="redball"/>
+
+<table>
+	<tr>
+
+	
+	   <td><button onclick="upleft()"><img src="redball1-005.jpg" height=50""width=50"/></button>
+	   <td><button onclick="moveup()"><img src="redball1-001.jpg" height=50"width=50"/></button>
+	   <td><button onclick="moveupright()"><img src="redball1-006.jpg" height=50"width=50"/></button>
+	   </tr>
+	   <tr>
+	   <td><button onclick="moveleft()"><img src="redball1-004.jpg" height=50"width=50"/></button>
+	   <td><button onclick="movetriangle()"><img src="redball1-009.jpg" height=50"width=50"/></button>
+	   <td><button onclick="moveright()"><img src="redball1-002.jpg" height=50"width=50"/></button>
+	   </tr>
+	   <tr>
+	   <td><button onclick="movedownleft()"><img src="redball1-008.jpg" height=50"width=50"/></button>
+	   <td><button onclick="movedown()"><img src="redball1-003.jpg" height=50"width=50"></button>
+	   <td><button onclick="movedownright"><img src="redball1-007.jpg" height=50"width=50"></button>
+</tr>
+
+
+
+</body>
+/</html>
